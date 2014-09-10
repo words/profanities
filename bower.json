@@ -1,0 +1,32 @@
+{
+  "name": "profanities",
+  "main": "index.js",
+  "description": "List of (possible) English profane words",
+  "license": "MIT",
+  "keywords": [
+    "profane",
+    "vulgar",
+    "word",
+    "list"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/profanities.git"
+  },
+  "authors": [
+    "Titus Wormer <tituswormer@gmail.com>"
+  ],
+  "dependencies": {
+    "datalist-interface": "~0.0.1"
+  },
+  "ignore": [
+    ".*",
+    "*.log",
+    "*.md",
+    "component.json",
+    "package.json",
+    "coverage",
+    "node_modules",
+    "spec"
+  ]
+}

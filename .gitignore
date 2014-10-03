@@ -1,6 +1,8 @@
 node_modules
 bower_components
 components
+build
 .DS_Store
 coverage
 spec/browser.spec.js
+*.log

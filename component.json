@@ -17,6 +17,6 @@
     "data/profanities.json"
   ],
   "dependencies": {
-    "wooorm/datalist-interface": "~0.0.1"
+    "wooorm/datalist-interface": "^0.1.0"
   }
 }

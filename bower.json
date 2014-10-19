@@ -17,7 +17,7 @@
     "Titus Wormer <tituswormer@gmail.com>"
   ],
   "dependencies": {
-    "datalist-interface": "~0.0.1"
+    "datalist-interface": "^0.1.0"
   },
   "ignore": [
     ".*",

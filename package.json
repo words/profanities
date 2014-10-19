@@ -11,12 +11,12 @@
   ],
   "author": "Titus Wormer <tituswormer@gmail.com>",
   "dependencies": {
-    "datalist-interface": "^0.0.1"
+    "datalist-interface": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "^0.8.0",
     "istanbul": "^0.3.0",
-    "jscs": "^1.6.0",
+    "jscs": "^1.7.0",
     "mocha": "^1.20.0",
     "plain-text-data-to-json": "^0.1.1"
   },

@@ -39,21 +39,5 @@
     "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- spec/profanities.spec.js",
     "prepublish": "npm run scrape-data && npm run build-data && npm run build-supported-words",
     "make": "npm run lint && npm run coverage"
-  },
-  "testling": {
-    "files": "spec/profanities.spec.js",
-    "harness": "mocha",
-    "browsers": [
-      "iexplore/latest",
-      "chrome/latest",
-      "chrome/canary",
-      "firefox/latest",
-      "firefox/nightly",
-      "opera/latest",
-      "opera/next",
-      "safari/latest",
-      "iphone/latest",
-      "android-browser/latest"
-    ]
   }
 }

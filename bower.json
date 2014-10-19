@@ -9,6 +9,9 @@
     "word",
     "list"
   ],
+  "dependencies": {
+    "datalist-interface": "^0.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wooorm/profanities.git"
@@ -16,9 +19,6 @@
   "authors": [
     "Titus Wormer <tituswormer@gmail.com>"
   ],
-  "dependencies": {
-    "datalist-interface": "^0.1.0"
-  },
   "ignore": [
     ".*",
     "*.log",

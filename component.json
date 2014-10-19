@@ -9,14 +9,14 @@
     "word",
     "list"
   ],
+  "dependencies": {
+    "wooorm/datalist-interface": "^0.1.0"
+  },
   "repository": "wooorm/profanities",
   "scripts": [
     "index.js"
   ],
   "json": [
     "data/profanities.json"
-  ],
-  "dependencies": {
-    "wooorm/datalist-interface": "^0.1.0"
-  }
+  ]
 }

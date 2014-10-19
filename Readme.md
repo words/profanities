@@ -40,7 +40,7 @@ profanities.is('unicorn'); // false
 
 ## Supported words
 
-For a complete list of profane words, see [Supported-profanities.md](Supported-profanities.md); **note that this file contains terms which might be viewed as (very) offensive**.
+For a complete list of profane words, see [Supported-words.md](Supported-words.md); **note that this file contains terms which might be viewed as (very) offensive**.
 
 Note that the words listed in **profanities** might **not** be profane in certain contexts.
 

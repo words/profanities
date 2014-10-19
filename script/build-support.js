@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require('fs'),
-    words = require('./data/profanities.json');
+    words = require('../data/profanities.json');
 
 fs.writeFileSync('Supported-words.md',
     'Supported Words\n' +

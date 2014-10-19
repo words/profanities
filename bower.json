@@ -28,8 +28,7 @@
     "components/",
     "coverage/",
     "node_modules/",
-    "build-data.js",
-    "build-support.js",
+    "script/",
     "test.js",
     "component.json",
     "package.json"

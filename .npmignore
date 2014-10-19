@@ -5,8 +5,7 @@ bower_components/
 components/
 coverage/
 node_modules/
-build-data.js
-build-supported-words.js
+script/
 test.js
 bower.json
 component.json

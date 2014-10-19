@@ -1,8 +1,23 @@
 'use strict';
 
-var words, Interface;
+/**
+ * Dependencies.
+ */
+
+var Interface;
+
+Interface = require('datalist-interface');
+
+/**
+ * Data.
+ */
+
+var words;
 
 words = require('./data/profanities.json');
-Interface = require('datalist-interface');
+
+/**
+ * Expose profanities.
+ */
 
 module.exports = new Interface(words);

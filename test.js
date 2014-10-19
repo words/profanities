@@ -1,28 +1,39 @@
 'use strict';
 
-var buzzwords, assert;
+/**
+ * Dependencies.
+ */
 
-buzzwords = require('./');
+var profanities,
+    assert;
+
+profanities = require('./');
 assert = require('assert');
 
-describe('buzzwords', function () {
+/**
+ * Tests.
+ */
+
+describe('profanities', function () {
     it('should be an `Object`', function () {
-        assert(typeof buzzwords === 'object');
+        assert(typeof profanities === 'object');
     });
 });
 
-describe('buzzwords.is(word)', function () {
-    it('should return true if a word is a buzzword', function () {
-        assert(buzzwords.is('biteme') === true);
+describe('profanities.is(word)', function () {
+    it('should return true if a word is listed', function () {
+        assert(profanities.is('biteme') === true);
     });
 
-    it('should return false if a word is not a buzzword', function () {
-        assert(buzzwords.is('unicorn') === false);
+    it('should return false if a word is not listed', function () {
+        assert(profanities.is('unicorn') === false);
     });
 });
 
-describe('buzzwords.all()', function () {
-    var all = buzzwords.all();
+describe('profanities.all()', function () {
+    var all;
+
+    all = profanities.all();
 
     it('should return an array', function () {
         assert('length' in all);
@@ -30,60 +41,60 @@ describe('buzzwords.all()', function () {
     });
 
     it('every entry should be lowercase', function () {
-        var iterator = -1,
-            length = all.length;
-
-        while (++iterator < length) {
-            assert(all[iterator].toLowerCase() === all[iterator]);
-        }
+        all.forEach(function (word) {
+            assert(word.toLowerCase() === word);
+        });
     });
 
     it('every entry should only occur once', function () {
-        var iterator = -1,
-            length = all.length;
-
-        while (++iterator < length) {
-            assert(all.indexOf(all[iterator], iterator + 1) === -1);
-        }
+        all.forEach(function (word, index) {
+            assert(all.indexOf(word, index + 1) === -1);
+        });
     });
 
     it('should be immutable', function () {
         all.push('unicorn');
 
-        assert(buzzwords.all().indexOf('unicorn') === -1);
+        assert(profanities.all().indexOf('unicorn') === -1);
     });
 });
 
-describe('buzzwords.add(buzzword) and buzzwords.remove(buzzword)',
+describe('profanities.add(word) and profanities.remove(word)',
     function () {
-        it('should add and remove a buzzword', function () {
-            assert(buzzwords.is('unicorn') === false);
+        it('should add and remove a word', function () {
+            assert(profanities.is('unicorn') === false);
 
-            buzzwords.add('unicorn');
-            assert(buzzwords.is('unicorn') === true);
+            profanities.add('unicorn');
 
-            buzzwords.remove('unicorn');
-            assert(buzzwords.is('unicorn') === false);
+            assert(profanities.is('unicorn') === true);
+
+            profanities.remove('unicorn');
+
+            assert(profanities.is('unicorn') === false);
         });
 
-        it('should add and remove multiple buzzwords', function () {
-            assert(buzzwords.is('unicorn') === false);
-            assert(buzzwords.is('rainbow') === false);
+        it('should add and remove multiple profanities', function () {
+            assert(profanities.is('unicorn') === false);
+            assert(profanities.is('rainbow') === false);
 
-            buzzwords.add('unicorn', 'rainbow');
-            assert(buzzwords.is('unicorn') === true);
-            assert(buzzwords.is('rainbow') === true);
+            profanities.add('unicorn', 'rainbow');
 
-            buzzwords.remove('unicorn', 'rainbow');
-            assert(buzzwords.is('unicorn') === false);
-            assert(buzzwords.is('rainbow') === false);
+            assert(profanities.is('unicorn') === true);
+            assert(profanities.is('rainbow') === true);
+
+            profanities.remove('unicorn', 'rainbow');
+
+            assert(profanities.is('unicorn') === false);
+            assert(profanities.is('rainbow') === false);
         });
 
-        it('should fail silently when removing a non-existing buzzword',
+        it('should fail silently when removing a non-existing word',
             function () {
-                assert(buzzwords.is('unicorn') === false);
-                buzzwords.remove('unicorn');
-                assert(buzzwords.is('unicorn') === false);
+                assert(profanities.is('unicorn') === false);
+
+                profanities.remove('unicorn');
+
+                assert(profanities.is('unicorn') === false);
             }
         );
     }

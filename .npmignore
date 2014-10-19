@@ -5,9 +5,9 @@ bower_components/
 components/
 coverage/
 node_modules/
-spec/
 build-data.js
 build-supported-words.js
+test.js
 bower.json
 component.json
 History.md

@@ -28,9 +28,9 @@
     "components/",
     "coverage/",
     "node_modules/",
-    "spec/",
     "build-data.js",
     "build-supported-words.js",
+    "test.js",
     "component.json",
     "package.json"
   ]

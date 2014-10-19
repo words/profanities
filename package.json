@@ -25,16 +25,16 @@
     "plain-text-data-to-json": "^0.1.1"
   },
   "scripts": {
-    "test": "node_modules/.bin/_mocha --reporter spec --check-leaks -u exports spec/profanities.spec.js",
-    "test-travis": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks -u exports spec/profanities.spec.js",
+    "test": "node_modules/.bin/_mocha --reporter spec --check-leaks -u exports test.js",
+    "test-travis": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks -u exports test.js",
     "lint": "npm run lint-api && npm run lint-test && npm run lint-style",
     "lint-api": "node_modules/.bin/eslint index.js build-data.js build-supported-words.js --env node --env browser --rule 'quotes: [2, single]'",
-    "lint-test": "node_modules/.bin/eslint spec/profanities.spec.js --env node --env mocha --rule 'quotes: [2, single]'",
-    "lint-style": "node_modules/.bin/jscs index.js build-data.js build-supported-words.js spec/profanities.spec.js --reporter=inline",
+    "lint-test": "node_modules/.bin/eslint test.js --env node --env mocha --rule 'quotes: [2, single]'",
+    "lint-style": "node_modules/.bin/jscs index.js build-data.js build-supported-words.js test.js --reporter=inline",
     "scrape-data": "curl --connect-timeout 5 --max-time 10 -L http://www.cs.cmu.edu/~biglou/resources/bad-words.txt -o data/profanities.txt || exit 0",
     "build-data": "node build-data.js",
     "build-supported-words": "node build-supported-words.js",
-    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- spec/profanities.spec.js",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- test.js",
     "prepublish": "npm run scrape-data && npm run build-data && npm run build-supported-words",
     "make": "npm run lint && npm run coverage"
   }

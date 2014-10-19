@@ -2,7 +2,7 @@
 
 var buzzwords, assert;
 
-buzzwords = require('..');
+buzzwords = require('./');
 assert = require('assert');
 
 describe('buzzwords', function () {

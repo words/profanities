@@ -29,7 +29,7 @@
     "coverage/",
     "node_modules/",
     "build-data.js",
-    "build-supported-words.js",
+    "build-support.js",
     "test.js",
     "component.json",
     "package.json"

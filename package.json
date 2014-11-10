@@ -27,16 +27,17 @@
   "scripts": {
     "test": "node_modules/.bin/_mocha --reporter spec --check-leaks -u exports test.js",
     "test-travis": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks -u exports test.js",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- test.js",
     "lint": "npm run lint-api && npm run lint-test && npm run lint-script && npm run lint-style",
     "lint-api": "node_modules/.bin/eslint index.js",
     "lint-test": "node_modules/.bin/eslint test.js --env mocha",
     "lint-script": "node_modules/.bin/eslint script/build-data.js script/build-support.js",
     "lint-style": "node_modules/.bin/jscs index.js script/build-data.js script/build-support.js test.js --reporter=inline",
+    "make": "npm run lint && npm run coverage",
     "scrape-data": "curl --connect-timeout 5 --max-time 10 -L http://www.cs.cmu.edu/~biglou/resources/bad-words.txt -o data/profanities.txt || exit 0",
     "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
-    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- test.js",
-    "prepublish": "npm run scrape-data && npm run build-data && npm run build-support",
-    "make": "npm run lint && npm run coverage"
+    "build": "npm run scrape-data && npm run build-data && npm run build-support",
+    "prepublish": "npm run build"
   }
 }

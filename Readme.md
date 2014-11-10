@@ -1,4 +1,4 @@
-# profanities [![Build Status](https://travis-ci.org/wooorm/profanities.svg?branch=master)](https://travis-ci.org/wooorm/profanities) [![Coverage Status](https://img.shields.io/coveralls/wooorm/profanities.svg)](https://coveralls.io/r/wooorm/profanities?branch=master)
+# profanities [![Build Status](https://img.shields.io/travis/wooorm/profanities.svg?style=flat)](https://travis-ci.org/wooorm/profanities) [![Coverage Status](https://img.shields.io/coveralls/wooorm/profanities.svg?style=flat)](https://coveralls.io/r/wooorm/profanities?branch=master)
 
 List of 1300 English profane words.
 

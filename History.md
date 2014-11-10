@@ -1,4 +1,14 @@
 
+n.n.n / 2014-11-10
+==================
+
+ * Refactor script
+ * Refactor npm script target order in `package.json`
+ * Add flat badges to `Readme.md`
+ * Add `.eslintrc`
+ * Refactor `.jscs.json`
+ * Update eslint, mocha
+
 0.1.0 / 2014-10-19
 ==================
 

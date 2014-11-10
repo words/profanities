@@ -1,14 +1,25 @@
 'use strict';
 
-var fs = require('fs'),
-    words = require('../data/profanities.json');
+/**
+ * Dependencies.
+ */
+
+var fs,
+    words;
+
+fs = require('fs');
+words = require('..');
+
+/**
+ * Write.
+ */
 
 fs.writeFileSync('Supported-words.md',
     'Supported Words\n' +
     '=================\n' +
     '\n' +
 
-    words.map(function (word) {
+    words.all().map(function (word) {
         return '* “' + word + '”';
     }).join(';\n') +
 

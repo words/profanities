@@ -1,11 +1,26 @@
 'use strict';
 
-var fs, textToJSON, data;
+/**
+ * Dependencies.
+ */
+
+var fs,
+    textToJSON;
 
 fs = require('fs');
 textToJSON = require('plain-text-data-to-json');
 
+/**
+ * Data.
+ */
+
+var data;
+
 data = textToJSON(fs.readFileSync('data/profanities.txt', 'utf8'));
+
+/**
+ * Validate.
+ */
 
 data.forEach(function (word) {
     if (word.toLowerCase() !== word) {
@@ -15,5 +30,9 @@ data.forEach(function (word) {
         );
     }
 });
+
+/**
+ * Write.
+ */
 
 fs.writeFileSync('data/profanities.json', JSON.stringify(data, null, 2));

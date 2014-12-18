@@ -1,6 +1,6 @@
 'use strict';
 
-/**
+/*
  * Dependencies.
  */
 
@@ -10,7 +10,7 @@ var fs,
 fs = require('fs');
 words = require('..');
 
-/**
+/*
  * Write.
  */
 

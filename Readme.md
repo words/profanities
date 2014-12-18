@@ -57,4 +57,4 @@ The list is scraped from [Luis von Ahn's Research Group (Carnegie Mellon)](http:
 
 ## License
 
-MIT © Titus Wormer
+MIT © [Titus Wormer](http://wooorm.com)

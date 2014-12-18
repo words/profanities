@@ -1,5 +1,6 @@
 .*
 *.log
+*.txt
 build/
 bower_components/
 components/
@@ -10,5 +11,4 @@ test.js
 bower.json
 component.json
 History.md
-Supported-profanities.md
-data/profanities.txt
+Support.md

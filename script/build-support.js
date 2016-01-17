@@ -1,27 +1,34 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2016 Titus Wormer
+ * @license MIT
+ * @module profanities:script:build-data
+ * @fileoverview Generate a database from source.
+ */
+
 'use strict';
+
+/* eslint-env node */
 
 /*
  * Dependencies.
  */
 
-var fs,
-    words;
-
-fs = require('fs');
-words = require('..');
+var fs = require('fs');
+var path = require('path');
+var json = require('JSONStream');
+var join = require('join-stream');
+var wrap = require('wrap-stream');
 
 /*
- * Write.
+ * Generate.
  */
 
-fs.writeFileSync('Support.md',
-    'Supported Words\n' +
-    '=================\n' +
-    '\n' +
-
-    words.all().map(function (word) {
-        return '* “' + word + '”';
-    }).join(';\n') +
-
-    '.\n'
-);
+fs
+    .createReadStream(path.join('data', 'index.json'))
+    .pipe(json.parse(function (value) {
+        return '*   “' + value + '”';
+    }))
+    .pipe(join(';\n'))
+    .pipe(wrap('# Support\n\n', '.\n'))
+    .pipe(fs.createWriteStream(path.join('support.md')));

@@ -1,22 +1,21 @@
 {
   "name": "profanities",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "List of (possible) English profane words",
   "license": "MIT",
   "keywords": [
+    "offensive",
     "profane",
     "vulgar",
     "word",
     "list"
   ],
-  "dependencies": {
-    "wooorm/datalist-interface": "^0.2.0"
-  },
   "repository": "wooorm/profanities",
+  "dependencies": {},
   "scripts": [
     "index.js"
   ],
   "json": [
-    "data/profanities.json"
+    "data/index.json"
   ]
 }

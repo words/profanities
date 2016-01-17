@@ -1,44 +1,63 @@
 {
   "name": "profanities",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "List of (possible) English profane words",
   "license": "MIT",
   "keywords": [
+    "offensive",
     "profane",
     "vulgar",
     "word",
     "list"
   ],
-  "dependencies": {
-    "datalist-interface": "^0.2.0"
-  },
+  "files": [
+    "index.js",
+    "data/index.json"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/wooorm/profanities.git"
   },
-  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "bugs": "https://github.com/wooorm/profanities/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^0.10.0",
-    "istanbul": "^0.3.0",
-    "jscs": "^1.0.0",
-    "jscs-jsdoc": "^0.3.0",
-    "mocha": "^2.0.0",
-    "plain-text-data-to-json": "^0.1.0"
+    "browserify": "^13.0.0",
+    "eslint": "^1.0.0",
+    "esmangle": "^1.0.0",
+    "got": "^6.1.0",
+    "istanbul": "^0.4.0",
+    "join-stream": "0.0.0",
+    "jscs": "^2.0.0",
+    "jscs-jsdoc": "^1.0.0",
+    "map-stream": "0.0.6",
+    "merge-stream": "^1.0.0",
+    "nlcst-normalize": "^1.0.0",
+    "remark": "^3.0.0",
+    "remark-comment-config": "^2.0.2",
+    "remark-github": "^3.0.0",
+    "remark-lint": "^2.2.1",
+    "remark-slug": "^3.0.1",
+    "remark-validate-links": "^2.0.2",
+    "sort-stream": "^1.0.1",
+    "split": "^1.0.0",
+    "stream-filter": "^1.0.0",
+    "tape": "^4.0.0",
+    "unique-stream": "^2.2.0",
+    "wrap-stream": "^2.0.0"
   },
   "scripts": {
-    "test": "_mocha --check-leaks test.js",
-    "test-travis": "istanbul cover _mocha --report lcovonly -- --check-leaks test.js",
-    "coverage": "istanbul cover _mocha -- -- test.js",
-    "lint-api": "eslint index.js",
-    "lint-test": "eslint --env mocha test.js",
-    "lint-script": "eslint script/build-data.js script/build-support.js",
-    "lint-style": "jscs --reporter inline index.js script/build-data.js script/build-support.js test.js",
-    "lint": "npm run lint-api && npm run lint-test && npm run lint-script && npm run lint-style",
-    "make": "npm run lint && npm run coverage",
-    "scrape-data": "curl --connect-timeout 5 --max-time 10 -L http://www.cs.cmu.edu/~biglou/resources/bad-words.txt -o data/profanities.txt || exit 0",
+    "build-md": "remark . --quiet --frail",
     "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
-    "build": "npm run scrape-data && npm run build-data && npm run build-support",
-    "prepublish": "npm run build"
+    "build-bundle": "browserify index.js --bare -s profanities > profanities.js",
+    "build-mangle": "esmangle profanities.js > profanities.min.js",
+    "build": "npm run build-md && npm run build-support && npm run build-bundle && npm run build-mangle",
+    "lint-api": "eslint .",
+    "lint-style": "jscs --reporter inline .",
+    "lint": "npm run lint-api && npm run lint-style",
+    "test-api": "node test.js",
+    "test-coverage": "istanbul cover test.js",
+    "test": "npm run build && npm run lint && npm run test-coverage"
   }
 }

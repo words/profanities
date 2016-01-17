@@ -1,7 +1,4 @@
-.DS_Store
-*.log
 components/
 coverage/
-node_modules/
 profanities.js
 profanities.min.js

@@ -1,13 +1,25 @@
 language: node_js
-script: npm run-script test-travis
 node_js:
 - '0.10'
 - '0.11'
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+- '0.12'
+- '4.0'
+- '5.0'
+- iojs
+sudo: false
+after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov
 deploy:
-  provider: npm
-  email: tituswormer@gmail.com
-  api_key:
-    secure: Se7z70GTSVEkeI/jL1uTmyeWu1v8yQUVozbqgFgTqS0rSV6K+UPzP6B6ZQt9P9iLgwERfWKvLgIyj6v/s/nM8umeze9ymLy5okEZL0+I1cy5Aqkx/cXYnhCbdHQJ/1CvxbQr7TXSgqTLHW0Oti1OOUKfqmO1Nh1Zscv9drxzTH4=
-  on:
-    repo: wooorm/profanities
+  - provider: npm
+    email: tituswormer@gmail.com
+    api_key:
+        secure: Qau6SlUg8DviNQPQyiazu7c8VSMXeChcGfNUeRPJbJC+u4gOX2DesfzNiIlJCueHifwdqIp0q8Sabj/EOcuAvSpZwlsRp1lqIaXiTEHZHXxsZRWk6RTkGCKNRG6/rhATE8W7RNdYcan39YR1qpKPdn7svtO0UTi/z7WZsVHp+DQ=
+    on:
+      tags: true
+  - provider: releases
+    api_key:
+        secure: Ll8D7i6u2mSDtcfL12FLixDODn7paHUXfvGsNGlOu3p7juoAuAajPQxr+mtdMhGFkL/QHa8b+3gdiUEy9az0+eKdtFgTaYECTVIbiBGZmu2vlIed1OYy1wan2lKmYAItAt+K9kRNvl6Kp2v1+HFFVSCbIMe1BqvYgCbwud+yShM=
+    file:
+      - "profanities.js"
+      - "profanities.min.js"
+    on:
+      tags: true

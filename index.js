@@ -1,23 +1,17 @@
+/**
+ * @author Titus Wormer
+ * @copyright 2016 Titus Wormer
+ * @license MIT
+ * @module profanities
+ * @fileoverview List of (possible) English profane words.
+ */
+
 'use strict';
 
-/*
- * Dependencies.
- */
-
-var Interface;
-
-Interface = require('datalist-interface');
+/* eslint-env commonjs */
 
 /*
- * Data.
+ * Expose.
  */
 
-var words;
-
-words = require('./data/profanities.json');
-
-/*
- * Expose profanities.
- */
-
-module.exports = new Interface(words);
+module.exports = require('./data/index.json');

@@ -52,7 +52,7 @@
     "build-support": "node script/build-support.js",
     "build-bundle": "browserify index.js --bare -s profanities > profanities.js",
     "build-mangle": "esmangle profanities.js > profanities.min.js",
-    "build": "npm run build-md && npm run build-support && npm run build-bundle && npm run build-mangle",
+    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint-api": "eslint .",
     "lint-style": "jscs --reporter inline .",
     "lint": "npm run lint-api && npm run lint-style",

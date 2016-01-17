@@ -12,12 +12,12 @@ deploy:
   - provider: npm
     email: tituswormer@gmail.com
     api_key:
-        secure: Qau6SlUg8DviNQPQyiazu7c8VSMXeChcGfNUeRPJbJC+u4gOX2DesfzNiIlJCueHifwdqIp0q8Sabj/EOcuAvSpZwlsRp1lqIaXiTEHZHXxsZRWk6RTkGCKNRG6/rhATE8W7RNdYcan39YR1qpKPdn7svtO0UTi/z7WZsVHp+DQ=
+        secure: Uwvuinw4bpjhUUvxCoJpBhwMnbLBIM+0IvRkywVmlBK00jhnQEU+wCi51ujq2rUJ2oBe6HBMsJjpiO2jnkke4+ovnVzFAli4pF02jlhNKbxvjCgL7opCnY3P0K1ianCbij6MKzL8cXZPq8Y1UWIEZIJcXrH+6Ki2t7IfXpbCUfc=
     on:
       tags: true
   - provider: releases
     api_key:
-        secure: Ll8D7i6u2mSDtcfL12FLixDODn7paHUXfvGsNGlOu3p7juoAuAajPQxr+mtdMhGFkL/QHa8b+3gdiUEy9az0+eKdtFgTaYECTVIbiBGZmu2vlIed1OYy1wan2lKmYAItAt+K9kRNvl6Kp2v1+HFFVSCbIMe1BqvYgCbwud+yShM=
+        secure: Pjl0kiAPE3E6qA1EYFrGj9oKUehJpANttmVTcZAUT8s0M24Nxro9uwVErVpPTCeQZc5XUvXr47hU4w3HDFbICW4QJ++TKuXtMvgW7Cy7aLSYzltm5Ukl8M/8CqATSU66mo58/Q0kWrNNH/zr+a4CvWTYuiYOxtVsBXUfIiksd68=
     file:
       - "profanities.js"
       - "profanities.min.js"

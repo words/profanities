@@ -14,6 +14,7 @@ deploy:
     api_key:
         secure: Uwvuinw4bpjhUUvxCoJpBhwMnbLBIM+0IvRkywVmlBK00jhnQEU+wCi51ujq2rUJ2oBe6HBMsJjpiO2jnkke4+ovnVzFAli4pF02jlhNKbxvjCgL7opCnY3P0K1ianCbij6MKzL8cXZPq8Y1UWIEZIJcXrH+6Ki2t7IfXpbCUfc=
     on:
+      node: '5.0'
       tags: true
   - provider: releases
     api_key:

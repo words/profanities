@@ -20,6 +20,9 @@
   },
   "bugs": "https://github.com/wooorm/profanities/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
   "dependencies": {},
   "devDependencies": {
     "browserify": "^13.0.0",

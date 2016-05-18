@@ -27,18 +27,6 @@ var sort = require('sort-stream');
 var normalize = require('nlcst-normalize');
 
 /*
- * List of words with a very high chance of being a
- * false-positive, either because they are a normal
- * word to describe a group of people, e.g., republican,
- * an accepted term, e.g., color, or not *that* bad,
- * e.g., angry.
- */
-
-var notSoBad = fs
-    .readFileSync(path.join('script', 'not-so-bad.txt'), 'utf8')
-    .split('\n');
-
-/*
  * Crawl.
  */
 
@@ -63,9 +51,6 @@ merge(offensive, racial)
         callback(null, normalize(data).trim());
     }))
     .pipe(filter(Boolean))
-    .pipe(filter(function (value) {
-        return notSoBad.indexOf(value) === -1;
-    }))
     .pipe(unique())
     .pipe(sort())
     .pipe(json.stringify('[\n  ', ',\n  ', '\n]\n'))

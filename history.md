@@ -2,6 +2,11 @@
 
 <!--lint disable no-multiple-toplevel-headings -->
 
+2.1.0 / 2016-05-18
+==================
+
+*   Add `jewed`, `spa` to list of phrases ([`aa715a8`](https://github.com/wooorm/profanities/commit/aa715a8))
+
 2.0.0 / 2016-05-18
 ==================
 

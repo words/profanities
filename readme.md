@@ -13,8 +13,8 @@ List of 1725 (possible) English profane words.
 npm install profanities
 ```
 
-**profanities** is also available for [duo][duo-install], and as an
-AMD, CommonJS, and globals module, [uncompressed and compressed][releases].
+**profanities** is also available as an AMD, CommonJS, and globals
+module, [uncompressed and compressed][releases].
 
 ## Usage
 
@@ -85,8 +85,6 @@ WikiPedia][racial-slurs].
 [codecov]: https://codecov.io/github/wooorm/profanities
 
 [npm-install]: https://docs.npmjs.com/cli/install
-
-[duo-install]: http://duojs.org/#getting-started
 
 [releases]: https://github.com/wooorm/profanities/releases
 

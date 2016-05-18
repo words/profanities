@@ -43,10 +43,18 @@ var racial = fs
     .pipe(split());
 
 /*
+ * Load.
+ */
+
+var rest = fs
+    .createReadStream(path.join('script', 'rest.txt'))
+    .pipe(split());
+
+/*
  * Generate.
  */
 
-merge(offensive, racial)
+merge(offensive, racial, rest)
     .pipe(map(function (data, callback) {
         callback(null, normalize(data).trim());
     }))

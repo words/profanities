@@ -835,6 +835,7 @@
 *   “jesus”;
 *   “jesuschrist”;
 *   “jew”;
+*   “jewed”;
 *   “jewish”;
 *   “jig”;
 *   “jiga”;
@@ -1506,6 +1507,7 @@
 *   “sooty”;
 *   “sos”;
 *   “soviet”;
+*   “spa”;
 *   “spade”;
 *   “spades”;
 *   “spaghettibender”;

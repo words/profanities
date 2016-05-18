@@ -2,6 +2,9 @@
 
 List of 1725 (possible) English profane words.
 
+> See [**cuss**][cuss] for the same words, rated for sureness: how
+> likely it is to be used as either profanity or clean text.
+
 ## Installation
 
 [npm][npm-install]:
@@ -96,3 +99,5 @@ WikiPedia][racial-slurs].
 [luis-von-ahn]: http://www.cs.cmu.edu/~biglou/resources/
 
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
+
+[cuss]: https://github.com/wooorm/cuss

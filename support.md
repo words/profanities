@@ -575,6 +575,7 @@
 *   “fucka”;
 *   “fuckable”;
 *   “fuckbag”;
+*   “fuckbook”;
 *   “fuckbuddy”;
 *   “fucked”;
 *   “fuckedup”;

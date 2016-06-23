@@ -2,6 +2,12 @@
 
 <!--lint disable no-multiple-toplevel-headings -->
 
+2.2.0 / 2016-06-23
+==================
+
+*   Add `fuckbook` ([`6c4bc60`](https://github.com/wooorm/profanities/commit/6c4bc60))
+*   Remove distribution file from source ([`a142e48`](https://github.com/wooorm/profanities/commit/a142e48))
+
 2.1.0 / 2016-05-18
 ==================
 

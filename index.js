@@ -14,4 +14,4 @@
  * Expose.
  */
 
-module.exports = require('./data/index.json');
+module.exports = require('./index.json');

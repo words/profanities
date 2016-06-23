@@ -62,4 +62,4 @@ merge(offensive, racial, rest)
     .pipe(unique())
     .pipe(sort())
     .pipe(json.stringify('[\n  ', ',\n  ', '\n]\n'))
-    .pipe(fs.createWriteStream(path.join('data', 'index.json')));
+    .pipe(fs.createWriteStream(path.join('index.json')));

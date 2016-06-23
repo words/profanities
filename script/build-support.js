@@ -25,7 +25,7 @@ var wrap = require('wrap-stream');
  */
 
 fs
-    .createReadStream(path.join('data', 'index.json'))
+    .createReadStream(path.join('index.json'))
     .pipe(json.parse('*', function (value) {
         return '*   “' + value + '”';
     }))

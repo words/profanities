@@ -46,6 +46,14 @@ var racial = fs
  * Load.
  */
 
+var swearWords = fs
+    .createReadStream(path.join('script', 'swearWords.txt'))
+    .pipe(split());
+
+/*
+ * Load.
+ */
+
 var rest = fs
     .createReadStream(path.join('script', 'rest.txt'))
     .pipe(split());
@@ -54,7 +62,7 @@ var rest = fs
  * Generate.
  */
 
-merge(offensive, racial, rest)
+merge(offensive, racial, swearWords, rest)
     .pipe(map(function (data, callback) {
         callback(null, normalize(data).trim());
     }))

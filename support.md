@@ -128,7 +128,9 @@
 *   “blackout”;
 *   “blacks”;
 *   “blind”;
+*   “bloody”;
 *   “blow”;
+*   “blow job”;
 *   “blowjob”;
 *   “bluegum”;
 *   “bluegums”;
@@ -139,6 +141,7 @@
 *   “bohunk”;
 *   “bollick”;
 *   “bollock”;
+*   “bollok”;
 *   “bomb”;
 *   “bombers”;
 *   “bombing”;
@@ -192,6 +195,7 @@
 *   “bulldike”;
 *   “bulldyke”;
 *   “bullshit”;
+*   “bum”;
 *   “bumblefuck”;
 *   “bumfuck”;
 *   “bung”;
@@ -492,6 +496,7 @@
 *   “executioner”;
 *   “exkwew”;
 *   “explosion”;
+*   “f u c k”;
 *   “facefucker”;
 *   “faeces”;
 *   “fag”;
@@ -518,10 +523,12 @@
 *   “fckcum”;
 *   “fear”;
 *   “feces”;
+*   “feck”;
 *   “felatio”;
 *   “felch”;
 *   “felcher”;
 *   “felching”;
+*   “fellate”;
 *   “fellatio”;
 *   “feltch”;
 *   “feltcher”;
@@ -604,6 +611,7 @@
 *   “fucktard”;
 *   “fuckwhore”;
 *   “fuckyou”;
+*   “fudge packer”;
 *   “fudgepacker”;
 *   “fugly”;
 *   “fuk”;
@@ -641,6 +649,7 @@
 *   “glazeddonut”;
 *   “gob”;
 *   “god”;
+*   “god damn”;
 *   “godammit”;
 *   “goddamit”;
 *   “goddammit”;
@@ -830,6 +839,7 @@
 *   “japs”;
 *   “jebus”;
 *   “jeez”;
+*   “jerk”;
 *   “jerkoff”;
 *   “jerries”;
 *   “jerry”;
@@ -904,6 +914,8 @@
 *   “klanswoman”;
 *   “klanswomen”;
 *   “knife”;
+*   “knob end”;
+*   “knobend”;
 *   “knockers”;
 *   “kock”;
 *   “kondum”;
@@ -934,6 +946,7 @@
 *   “kykes”;
 *   “kyopo”;
 *   “kyopos”;
+*   “labia”;
 *   “lactate”;
 *   “laid”;
 *   “lapdance”;
@@ -962,6 +975,8 @@
 *   “lingerie”;
 *   “liquor”;
 *   “livesex”;
+*   “lmao”;
+*   “lmfao”;
 *   “loadedgun”;
 *   “lolita”;
 *   “looser”;
@@ -1148,6 +1163,7 @@
 *   “nuke”;
 *   “nutfucker”;
 *   “nymph”;
+*   “omg”;
 *   “ontherag”;
 *   “oral”;
 *   “oreo”;
@@ -1348,6 +1364,7 @@
 *   “rump”;
 *   “russki”;
 *   “russkie”;
+*   “s hit”;
 *   “sadis”;
 *   “sadom”;
 *   “sambo”;
@@ -1394,6 +1411,7 @@
 *   “sexy”;
 *   “sexymoma”;
 *   “sexyslim”;
+*   “sh1t”;
 *   “shag”;
 *   “shaggin”;
 *   “shagging”;
@@ -1485,6 +1503,7 @@
 *   “slutwhore”;
 *   “smack”;
 *   “smackthemonkey”;
+*   “smegma”;
 *   “smut”;
 *   “snatch”;
 *   “snatchpatch”;

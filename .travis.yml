@@ -3,7 +3,6 @@ node_js:
 - '5.0'
 - '6.0'
 sudo: false
-after_script: npm install codecov.io && cat ./coverage/lcov.info | codecov
 deploy:
   - provider: npm
     email: tituswormer@gmail.com

@@ -1,4 +1,4 @@
-# profanities [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# profanities [![Build Status][travis-badge]][travis]
 
 List of 1727 (possible) English profane words.
 
@@ -7,7 +7,7 @@ List of 1727 (possible) English profane words.
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install profanities
@@ -47,26 +47,21 @@ Part of the list is scraped from [Luis von Ahn’s Research Group (Carnegie
 Mellon)][luis-von-ahn].  I could not find
 any license information on that page.
 
-Another list is based on the [“List of ethnic slurs” from
+Another list is based on the [`List of ethnic slurs` from
 WikiPedia][racial-slurs].
 
 ## Related
 
 *   [buzzwords](https://github.com/wooorm/buzzwords)
     — List of buzzwords;
-
 *   [dale-chall](https://github.com/wooorm/dale-chall)
     — List of familiar American-English words (1995);
-
 *   [fillers](https://github.com/wooorm/fillers)
     — List of filler words.
-
 *   [hedges](https://github.com/wooorm/hedges)
     — List of hedge words;
-
 *   [spache](https://github.com/wooorm/spache)
     — List of simple American-English words (1974);
-
 *   [weasels](https://github.com/wooorm/profanities)
     — List of weasel words.
 
@@ -80,11 +75,7 @@ WikiPedia][racial-slurs].
 
 [travis]: https://travis-ci.org/wooorm/profanities
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/profanities.svg
-
-[codecov]: https://codecov.io/github/wooorm/profanities
-
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [releases]: https://github.com/wooorm/profanities/releases
 

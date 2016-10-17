@@ -44,5 +44,8 @@ merge(offensive, racial, rest)
   .pipe(filter(Boolean))
   .pipe(unique())
   .pipe(sort())
+  .pipe(map(function (data, callback) {
+    callback(null, String(data));
+  }))
   .pipe(json.stringify('[\n  ', ',\n  ', '\n]\n'))
   .pipe(fs.createWriteStream(path.join('index.json')));

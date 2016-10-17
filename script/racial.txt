@@ -1,3 +1,5 @@
+africoon
+jewess
 armo
 armos
 boongas
@@ -23,9 +25,11 @@ china swedes
 chinamen
 chinaman
 banana
+chingchong
 ching chong
 chink
 bananas
+chingchongs
 ching chongs
 chinks
 chonky
@@ -77,6 +81,10 @@ gipp
 gypsy
 hairyback
 hairybacks
+half breed
+halfbreed
+half caste
+halfcaste
 hori
 horis
 indon
@@ -108,6 +116,8 @@ pommie grant
 pommie grants
 spic
 spick
+spics
+spicks
 spik
 spig
 spigotty
@@ -147,6 +157,7 @@ ginzo
 swamp guinea
 dagos
 degos
+fruitcake
 greaseballs
 greasers
 guineas
@@ -185,6 +196,7 @@ jungle bunnies
 macacas
 maumaus
 mau maus
+mick
 mooncrickets
 moon crickets
 pickaninnies
@@ -199,11 +211,14 @@ thicklips
 tar babies
 niggers
 negros
+negres
+negress
 nigers
 nigs
 nigors
 nigras
 nigres
+nigress
 nigars
 niggurs
 niggas
@@ -244,6 +259,7 @@ maumau
 mau mau
 mooncricket
 moon cricket
+paddy
 pickaninny
 porch monkey
 sambo
@@ -291,15 +307,20 @@ hadjis
 hajis
 pakis
 ragheads
+diaperheads
+diaper heads
 sand niggers
 towel heads
 paki
 osama
 raghead
 sand nigger
+diaperhead
+diaper head
 towel head
 beaner
 beaney
+beanbag
 tacohead
 wetback
 illegal
@@ -307,6 +328,7 @@ pocho
 pocha
 beaners
 beaneys
+beanbags
 tacoheads
 wetbacks
 illegals
@@ -424,6 +446,7 @@ gookeye
 gook eye
 gooky
 pancake face
+slanty
 slope
 slopehead
 slopy

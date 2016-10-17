@@ -11,6 +11,7 @@
 *   “adult”;
 *   “africa”;
 *   “african”;
+*   “africoon”;
 *   “alla”;
 *   “allah”;
 *   “alligator bait”;
@@ -92,6 +93,8 @@
 *   “bastard”;
 *   “bazongas”;
 *   “bazooms”;
+*   “beanbag”;
+*   “beanbags”;
 *   “beaner”;
 *   “beaners”;
 *   “beaney”;
@@ -253,6 +256,8 @@
 *   “chinese”;
 *   “ching chong”;
 *   “ching chongs”;
+*   “chingchong”;
+*   “chingchongs”;
 *   “chink”;
 *   “chinks”;
 *   “chinky”;
@@ -410,6 +415,10 @@
 *   “deth”;
 *   “devil”;
 *   “devilworshipper”;
+*   “diaper head”;
+*   “diaper heads”;
+*   “diaperhead”;
+*   “diaperheads”;
 *   “dick”;
 *   “dickbrain”;
 *   “dickforbrains”;
@@ -567,6 +576,7 @@
 *   “freakfuck”;
 *   “freakyfucker”;
 *   “freefuck”;
+*   “fruitcake”;
 *   “fu”;
 *   “fubar”;
 *   “fuc”;
@@ -716,6 +726,10 @@
 *   “hajis”;
 *   “hajji”;
 *   “hajjis”;
+*   “half breed”;
+*   “half caste”;
+*   “halfbreed”;
+*   “halfcaste”;
 *   “hamas”;
 *   “handjob”;
 *   “haole”;
@@ -837,6 +851,7 @@
 *   “jesuschrist”;
 *   “jew”;
 *   “jewed”;
+*   “jewess”;
 *   “jewish”;
 *   “jig”;
 *   “jiga”;
@@ -1014,6 +1029,7 @@
 *   “mexican”;
 *   “mgger”;
 *   “mggor”;
+*   “mick”;
 *   “mickeyfinn”;
 *   “mideast”;
 *   “milf”;
@@ -1076,6 +1092,8 @@
 *   “nastywhore”;
 *   “nazi”;
 *   “necro”;
+*   “negres”;
+*   “negress”;
 *   “negro”;
 *   “negroes”;
 *   “negroid”;
@@ -1130,6 +1148,7 @@
 *   “nigras”;
 *   “nigre”;
 *   “nigres”;
+*   “nigress”;
 *   “nigs”;
 *   “nip”;
 *   “nipple”;
@@ -1158,6 +1177,7 @@
 *   “orgies”;
 *   “orgy”;
 *   “osama”;
+*   “paddy”;
 *   “paki”;
 *   “pakis”;
 *   “palesimian”;
@@ -1455,6 +1475,7 @@
 *   “skwe”;
 *   “slant”;
 *   “slanteye”;
+*   “slanty”;
 *   “slapper”;
 *   “slaughter”;
 *   “slav”;
@@ -1524,6 +1545,8 @@
 *   “spermherder”;
 *   “spic”;
 *   “spick”;
+*   “spicks”;
+*   “spics”;
 *   “spig”;
 *   “spigotty”;
 *   “spik”;

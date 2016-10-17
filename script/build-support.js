@@ -19,7 +19,7 @@ var wrap = require('wrap-stream');
 fs
   .createReadStream(path.join('index.json'))
   .pipe(json.parse('*', function (value) {
-    return '*   “' + value + '”';
+    return '*   `' + value + '`';
   }))
   .pipe(join(';\n'))
   .pipe(wrap('# Support\n\n', '.\n'))

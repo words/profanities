@@ -1,11 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module profanities:script:build-data
- * @fileoverview Generate a database.
- */
-
 'use strict';
 
 /* Dependencies. */

@@ -1,11 +1,3 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module retext:profanities
- * @fileoverview Test suite for `profanities`.
- */
-
 'use strict';
 
 /* Dependencies. */

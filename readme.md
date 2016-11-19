@@ -13,9 +13,6 @@ List of 1727 (possible) English profane words.
 npm install profanities
 ```
 
-**profanities** is also available as an AMD, CommonJS, and globals
-module, [uncompressed and compressed][releases].
-
 ## Usage
 
 ```js
@@ -76,8 +73,6 @@ WikiPedia][racial-slurs].
 [travis]: https://travis-ci.org/wooorm/profanities
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/profanities/releases
 
 [license]: LICENSE
 

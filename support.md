@@ -741,6 +741,11 @@
 *   `headfuck`;
 *   `headlights`;
 *   `hebe`;
+*   `hebephila`;
+*   `hebephile`;
+*   `hebephiles`;
+*   `hebephilia`;
+*   `hebephilic`;
 *   `hebes`;
 *   `heeb`;
 *   `heebs`;
@@ -1178,6 +1183,9 @@
 *   `orgy`;
 *   `osama`;
 *   `paddy`;
+*   `paederastic`;
+*   `paederasts`;
+*   `paederasty`;
 *   `paki`;
 *   `pakis`;
 *   `palesimian`;
@@ -1193,6 +1201,14 @@
 *   `peck`;
 *   `pecker`;
 *   `peckerwood`;
+*   `pederastic`;
+*   `pederasts`;
+*   `pederasty`;
+*   `pedo`;
+*   `pedophile`;
+*   `pedophiles`;
+*   `pedophilia`;
+*   `pedophilic`;
 *   `pee`;
 *   `peehole`;
 *   `peepee`;

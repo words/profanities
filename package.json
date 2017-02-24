@@ -30,8 +30,8 @@
     "map-stream": "0.0.6",
     "merge-stream": "^1.0.0",
     "nlcst-normalize": "^2.0.0",
-    "remark-cli": "^2.0.0",
-    "remark-preset-wooorm": "^1.0.0",
+    "remark-cli": "^3.0.0",
+    "remark-preset-wooorm": "^2.0.0",
     "sort-stream": "^1.0.1",
     "split": "^1.0.0",
     "stream-filter": "^2.1.0",
@@ -41,7 +41,7 @@
     "xo": "^0.17.0"
   },
   "scripts": {
-    "build-md": "remark . --quiet --frail",
+    "build-md": "remark . -qfo",
     "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
     "build-bundle": "browserify index.json --bare -s profanities > profanities.js",
@@ -58,7 +58,6 @@
     ]
   },
   "remarkConfig": {
-    "output": true,
-    "presets": "wooorm"
+    "plugins": ["preset-wooorm"]
   }
 }

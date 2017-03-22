@@ -142,6 +142,7 @@
 *   `bohunk`;
 *   `bollick`;
 *   `bollock`;
+*   `bollocks`;
 *   `bomb`;
 *   `bombers`;
 *   `bombing`;

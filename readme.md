@@ -59,7 +59,7 @@ WikiPedia][racial-slurs].
     — List of hedge words;
 *   [spache](https://github.com/wooorm/spache)
     — List of simple American-English words (1974);
-*   [weasels](https://github.com/wooorm/profanities)
+*   [weasels](https://github.com/wooorm/weasels)
     — List of weasel words.
 
 ## License

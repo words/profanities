@@ -13,6 +13,6 @@ fs
   .pipe(json.parse('*', function (value) {
     return '*   `' + value + '`';
   }))
-  .pipe(join(';\n'))
-  .pipe(wrap('# Support\n\n', '.\n'))
+  .pipe(join('\n'))
+  .pipe(wrap('# Support\n\n', '\n'))
   .pipe(fs.createWriteStream(path.join('support.md')));

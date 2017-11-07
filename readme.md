@@ -1,6 +1,6 @@
 # profanities [![Build Status][travis-badge]][travis]
 
-List of 1727 (possible) English profane words.
+List of 1768 (possible) English profane words.
 
 > See [**cuss**][cuss] for the same words, rated for sureness: how
 > likely it is to be used as either profanity or clean text.
@@ -18,7 +18,7 @@ npm install profanities
 ```js
 var profanities = require('profanities');
 
-profanities.length; // 1727
+profanities.length; // 1768
 
 console.log(typeof profanities[0]); // 'string'
 ```
@@ -31,7 +31,7 @@ console.log(typeof profanities[0]); // 'string'
 
 ## Support
 
-**profanities** supports 1727 English profane words and phrases.
+**profanities** supports 1768 English profane words and phrases.
 For a complete list, see [support.md][support] (:warning: **this file
 contains (very) offensive terms**).
 
@@ -49,18 +49,18 @@ WikiPedia][racial-slurs].
 
 ## Related
 
-*   [buzzwords](https://github.com/wooorm/buzzwords)
-    — List of buzzwords;
-*   [dale-chall](https://github.com/wooorm/dale-chall)
-    — List of familiar American-English words (1995);
-*   [fillers](https://github.com/wooorm/fillers)
-    — List of filler words.
-*   [hedges](https://github.com/wooorm/hedges)
-    — List of hedge words;
-*   [spache](https://github.com/wooorm/spache)
-    — List of simple American-English words (1974);
-*   [weasels](https://github.com/wooorm/weasels)
-    — List of weasel words.
+*   [buzzwords](https://github.com/words/buzzwords)
+    — List of buzzwords
+*   [dale-chall](https://github.com/words/dale-chall)
+    — List of familiar American-English words (1995)
+*   [fillers](https://github.com/words/fillers)
+    — List of filler words
+*   [hedges](https://github.com/words/hedges)
+    — List of hedge words
+*   [spache](https://github.com/words/spache)
+    — List of simple American-English words (1974)
+*   [weasels](https://github.com/words/weasels)
+    — List of weasel words
 
 ## License
 

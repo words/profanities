@@ -68,7 +68,7 @@ WikiPedia][racial-slurs].
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/profanities.svg
+[travis-badge]: https://img.shields.io/travis/words/profanities.svg
 
 [travis]: https://travis-ci.org/words/profanities
 

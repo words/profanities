@@ -10,8 +10,8 @@
     "word",
     "list"
   ],
-  "repository": "https://github.com/wooorm/profanities",
-  "bugs": "https://github.com/wooorm/profanities/issues",
+  "repository": "words/profanities",
+  "bugs": "https://github.com/words/profanities/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
@@ -59,6 +59,8 @@
     ]
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }

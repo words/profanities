@@ -70,7 +70,7 @@ WikiPedia][racial-slurs].
 
 [travis-badge]: https://img.shields.io/travis/wooorm/profanities.svg
 
-[travis]: https://travis-ci.org/wooorm/profanities
+[travis]: https://travis-ci.org/words/profanities
 
 [npm]: https://docs.npmjs.com/cli/install
 

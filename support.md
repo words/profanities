@@ -342,6 +342,8 @@
 *   `cra5h`
 *   `crabs`
 *   `crack`
+*   `cracka`
+*   `cracker`
 *   `crackpipe`
 *   `crackwhore`
 *   `crap`

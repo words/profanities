@@ -23,7 +23,7 @@
   "dependencies": {},
   "devDependencies": {
     "JSONStream": "^1.1.2",
-    "browserify": "^14.0.0",
+    "browserify": "^15.0.0",
     "esmangle": "^1.0.0",
     "got": "^8.0.0",
     "join-stream": "0.0.0",

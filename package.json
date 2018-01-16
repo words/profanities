@@ -31,7 +31,7 @@
     "merge-stream": "^1.0.0",
     "nlcst-normalize": "^2.0.0",
     "remark-cli": "^4.0.0",
-    "remark-preset-wooorm": "^3.0.0",
+    "remark-preset-wooorm": "^4.0.0",
     "sort-stream": "^1.0.1",
     "split": "^1.0.0",
     "stream-filter": "^2.1.0",

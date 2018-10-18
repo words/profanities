@@ -54,7 +54,8 @@ Thanks, contributions are greatly appreciated!  :+1:
 New words should be added to [racial.txt][racial-list] if they are racial
 slurs; all other profanities should be added to [rest.txt][rest-list].
 
-After adding a word, run `npm test` to update [support.md][support] and open a Pull Request.
+After adding a word, run `npm test` to update [support.md][support]
+and open a Pull Request.
 
 ## Related
 

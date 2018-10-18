@@ -47,12 +47,14 @@ any license information on that page.
 Another list is based on the [`List of ethnic slurs` from
 WikiPedia][racial-slurs].
 
-### Adding Words
+## Contributing
+
+Thanks, contributions are greatly appreciated!  :+1:
 
 New words should be added to [racial.txt][racial-list] if they are racial
 slurs; all other profanities should be added to [rest.txt][rest-list].
 
-After adding a word, run `npm test` to update [support.md][support].
+After adding a word, run `npm test` to update [support.md][support] and open a Pull Request.
 
 ## Related
 

@@ -47,6 +47,16 @@ any license information on that page.
 Another list is based on the [`List of ethnic slurs` from
 WikiPedia][racial-slurs].
 
+## Contributing
+
+Thanks, contributions are greatly appreciated!  :+1:
+
+New words should be added to [racial.txt][racial-list] if they are racial
+slurs; all other profanities should be added to [rest.txt][rest-list].
+
+After adding a word, run `npm test` to update [support.md][support]
+and open a Pull Request.
+
 ## Related
 
 *   [buzzwords](https://github.com/words/buzzwords)
@@ -85,3 +95,7 @@ WikiPedia][racial-slurs].
 [racial-slurs]: https://en.wikipedia.org/wiki/List_of_ethnic_slurs
 
 [cuss]: https://github.com/wooorm/cuss
+
+[racial-list]: script/racial.txt
+
+[rest-list]: script/rest.txt

@@ -1,6 +1,6 @@
 # profanities [![Build Status][travis-badge]][travis]
 
-List of 1768 (possible) English profane words.
+List of 1772 (possible) English profane words.
 
 > See [**cuss**][cuss] for the same words, rated for sureness: how
 > likely it is to be used as either profanity or clean text.
@@ -18,7 +18,7 @@ npm install profanities
 ```js
 var profanities = require('profanities')
 
-profanities.length // 1768
+profanities.length // 1772
 
 console.log(typeof profanities[0]) // 'string'
 ```
@@ -31,7 +31,7 @@ console.log(typeof profanities[0]) // 'string'
 
 ## Support
 
-**profanities** supports 1768 English profane words and phrases.
+**profanities** supports 1772 English profane words and phrases.
 For a complete list, see [support.md][support] (:warning: **this file
 contains (very) offensive terms**).
 

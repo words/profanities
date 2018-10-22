@@ -16,10 +16,10 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "main": "index.json",
   "files": [
     "index.json"
   ],
-  "main": "index.json",
   "dependencies": {},
   "devDependencies": {
     "JSONStream": "^1.1.2",
@@ -29,6 +29,7 @@
     "map-stream": "0.0.7",
     "merge-stream": "^1.0.0",
     "nlcst-normalize": "^2.0.0",
+    "prettier": "^1.14.3",
     "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "sort-stream": "^1.0.1",
@@ -41,18 +42,25 @@
     "xo": "^0.23.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
     "build-bundle": "browserify index.json -s profanities > profanities.js",
     "build-mangle": "browserify index.json -s profanities -p tinyify > profanities.min.js",
-    "build": "npm run build-md && npm run build-data && npm run build-support && npm run build-bundle && npm run build-mangle",
-    "lint": "xo",
-    "test-api": "node test.js",
-    "test": "npm run build && npm run lint && npm run test-api"
+    "build": "npm run build-data && npm run build-support && npm run build-bundle && npm run build-mangle",
+    "test-api": "node test",
+    "test": "npm run format && npm run build && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "ignores": [
       "profanities.js"

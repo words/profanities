@@ -16,11 +16,11 @@ npm install profanities
 ## Usage
 
 ```js
-var profanities = require('profanities');
+var profanities = require('profanities')
 
-profanities.length; // 1768
+profanities.length // 1768
 
-console.log(typeof profanities[0]); // 'string'
+console.log(typeof profanities[0]) // 'string'
 ```
 
 ## API

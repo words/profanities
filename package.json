@@ -24,7 +24,6 @@
   "devDependencies": {
     "JSONStream": "^1.1.2",
     "browserify": "^16.0.0",
-    "esmangle": "^1.0.0",
     "got": "^9.0.0",
     "join-stream": "0.0.0",
     "map-stream": "0.0.7",
@@ -36,6 +35,7 @@
     "split": "^1.0.0",
     "stream-filter": "^2.1.0",
     "tape": "^4.0.0",
+    "tinyify": "^2.4.3",
     "unique-stream": "^2.2.0",
     "wrap-stream": "^2.0.0",
     "xo": "^0.23.0"
@@ -44,8 +44,8 @@
     "build-md": "remark . -qfo",
     "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
-    "build-bundle": "browserify index.json --bare -s profanities > profanities.js",
-    "build-mangle": "esmangle profanities.js > profanities.min.js",
+    "build-bundle": "browserify index.json -s profanities > profanities.js",
+    "build-mangle": "browserify index.json -s profanities -p tinyify > profanities.min.js",
     "build": "npm run build-md && npm run build-data && npm run build-support && npm run build-bundle && npm run build-mangle",
     "lint": "xo",
     "test-api": "node test.js",

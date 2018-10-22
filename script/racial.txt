@@ -469,3 +469,5 @@ slopeys
 slopers
 stuinties
 zipperheads
+tinker
+tinkers

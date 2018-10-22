@@ -1636,6 +1636,8 @@
 *   `timber nigger`
 *   `timber niggers`
 *   `timbernigger`
+*   `tinker`
+*   `tinkers`
 *   `tinkle`
 *   `tit`
 *   `titbitnipply`

@@ -4,3 +4,4 @@ node_modules/
 profanities.js
 profanities.min.js
 index.json
+yarn.lock

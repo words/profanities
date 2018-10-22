@@ -85,7 +85,7 @@ and open a Pull Request.
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [support]: support.md
 

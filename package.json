@@ -23,14 +23,14 @@
   "dependencies": {},
   "devDependencies": {
     "JSONStream": "^1.1.2",
-    "browserify": "^15.0.0",
+    "browserify": "^16.0.0",
     "esmangle": "^1.0.0",
-    "got": "^8.0.0",
+    "got": "^9.0.0",
     "join-stream": "0.0.0",
     "map-stream": "0.0.7",
     "merge-stream": "^1.0.0",
     "nlcst-normalize": "^2.0.0",
-    "remark-cli": "^4.0.0",
+    "remark-cli": "^6.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "sort-stream": "^1.0.1",
     "split": "^1.0.0",
@@ -38,7 +38,7 @@
     "tape": "^4.0.0",
     "unique-stream": "^2.2.0",
     "wrap-stream": "^2.0.0",
-    "xo": "^0.18.0"
+    "xo": "^0.23.0"
   },
   "scripts": {
     "build-md": "remark . -qfo",

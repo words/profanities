@@ -2,7 +2,7 @@
 
 /* Dependencies. */
 var test = require('tape');
-var profanities = require('./');
+var profanities = require('.');
 
 /* Tests. */
 test('profanities', function (t) {

@@ -42,14 +42,14 @@
     "xo": "^0.23.0"
   },
   "scripts": {
+    "generate": "node script/build-data.js",
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
-    "build-data": "node script/build-data.js",
     "build-support": "node script/build-support.js",
     "build-bundle": "browserify index.json -s profanities > profanities.js",
     "build-mangle": "browserify index.json -s profanities -p tinyify > profanities.min.js",
-    "build": "npm run build-data && npm run build-support && npm run build-bundle && npm run build-mangle",
+    "build": "npm run build-support && npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
-    "test": "npm run format && npm run build && npm run test-api"
+    "test": "npm run generate && npm run format && npm run build && npm run test-api"
   },
   "prettier": {
     "tabWidth": 2,

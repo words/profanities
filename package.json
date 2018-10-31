@@ -18,6 +18,7 @@
   ],
   "main": "index.json",
   "files": [
+    "ar-latn.json",
     "index.json"
   ],
   "dependencies": {},

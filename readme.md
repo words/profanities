@@ -31,21 +31,18 @@ console.log(typeof profanities[0]) // 'string'
 
 ## Support
 
-**profanities** supports 1772 English profane words and phrases.
-For a complete list, see [support.md][support] (:warning: **this file
-contains (very) offensive terms**).
+**profanities** supports many profane words and phrases in different languages.
 
 Note that the words listed in **profanities** might **not** be profane
 in certain contexts.
 
-## Data
-
-Part of the list is scraped from [Luis von Ahn’s Research Group (Carnegie
-Mellon)][luis-von-ahn].  I could not find
-any license information on that page.
-
-Another list is based on the [`List of ethnic slurs` from
-WikiPedia][racial-slurs].
+*   [`index.json`](index.json) — ± 1772 English profane words and phrases from
+    [Luis von Ahn’s Research Group (Carnegie Mellon)][luis-von-ahn], the [`List
+    of ethnic slurs` from WikiPedia][racial-slurs], and more (see
+    [support.md][support])
+*   [`ar-latn.json`](ar-latn.json) — ± 250 Arabic (Latin-Script) profane words
+    and phrases from [`naughty-words`][ar-source-naughty-words] and
+    [`youswear`][ar-source-youswear]
 
 ## Contributing
 
@@ -100,3 +97,7 @@ and open a Pull Request.
 [racial-list]: script/racial.txt
 
 [rest-list]: script/rest.txt
+
+[ar-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/ar
+
+[ar-source-youswear]: http://www.youswear.com/index.asp?language=Arabic

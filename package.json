@@ -14,7 +14,9 @@
   "bugs": "https://github.com/words/profanities/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
-    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+    "Michael Jalkio <mjalkio@gmail.com>",
+    "Ron Michael Zettlemoyer <ron@zettlemoyer.com>"
   ],
   "main": "index.json",
   "files": [

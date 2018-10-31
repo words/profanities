@@ -47,6 +47,8 @@ in certain contexts.
     [`naughty-words`][es-source-naughty-words],
     [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa],
     [`mundoxat.om`][es-source-mundoxat]
+*   [`fr.json`](fr.json) — ± 730 French profane words and phrases from
+    [`wiktionary.org`][fr-source]
 
 ## Contributing
 
@@ -113,3 +115,5 @@ and open a Pull Request.
 [es-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es
 
 [es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
+
+[fr-source]: https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais

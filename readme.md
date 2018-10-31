@@ -1,6 +1,6 @@
 # profanities [![Build Status][travis-badge]][travis]
 
-List of 1772 (possible) English profane words.
+List of lots of profane words.
 
 > See [**cuss**][cuss] for the same words, rated for sureness: how
 > likely it is to be used as either profanity or clean text.
@@ -56,8 +56,9 @@ in certain contexts.
 
 Thanks, contributions are greatly appreciated!  :+1:
 
-New words should be added to [racial.txt][racial-list] if they are racial
-slurs; all other profanities should be added to [rest.txt][rest-list].
+New English words should be added to [racial.txt][racial-list] if they are
+racial slurs; all other English profanities should be added to
+[rest.txt][rest-list].
 
 After adding a word, run `npm install` to install all required dependencies,
 then `npm test` to update [support.md][support]

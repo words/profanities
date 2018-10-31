@@ -49,6 +49,8 @@ in certain contexts.
     [`mundoxat.om`][es-source-mundoxat]
 *   [`fr.json`](fr.json) — ± 730 French profane words and phrases from
     [`wiktionary.org`][fr-source]
+*   [`pt-br.json`](pt-br.json) — ± 140 Brazilian Portuguese profane words from
+    [`aprenderpalavras.com`][pt-br-source]
 
 ## Contributing
 
@@ -117,3 +119,5 @@ and open a Pull Request.
 [es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728
 
 [fr-source]: https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Insultes_en_fran%C3%A7ais
+
+[pt-br-source]: https://aprenderpalavras.com/lista-de-palavroes-xingamentos-e-girias/

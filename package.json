@@ -21,7 +21,8 @@
     "ar-latn.json",
     "es.json",
     "fr.json",
-    "index.json"
+    "index.json",
+    "pt-br.json"
   ],
   "dependencies": {},
   "devDependencies": {

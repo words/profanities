@@ -43,6 +43,10 @@ in certain contexts.
 *   [`ar-latn.json`](ar-latn.json) — ± 250 Arabic (Latin-Script) profane words
     and phrases from [`naughty-words`][ar-source-naughty-words] and
     [`youswear`][ar-source-youswear]
+*   [`es.json`](es.json) — ± 550 Spanish profane words and phrases from
+    [`naughty-words`][es-source-naughty-words],
+    [`revistagq.com`][es-source-revistagq], [`taringa.net`][es-source-taringa],
+    [`mundoxat.om`][es-source-mundoxat]
 
 ## Contributing
 
@@ -101,3 +105,11 @@ and open a Pull Request.
 [ar-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/ar
 
 [ar-source-youswear]: http://www.youswear.com/index.asp?language=Arabic
+
+[es-source-taringa]: https://www.taringa.net/posts/info/7253513/Listado-de-vulgarismos-y-malas-palabras-en-espanol.htm
+
+[es-source-mundoxat]: https://www.mundoxat.com/foro/showthread.php?301-Lista-de-palabras-MALAS-Necesito-AYUDA%21
+
+[es-source-naughty-words]: https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words/blob/master/es
+
+[es-source-revistagq]: https://www.revistagq.com/la-buena-vida/articulos/221-insultos-en-castellano-que-deberias-saber/19728

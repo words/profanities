@@ -367,6 +367,7 @@
 *   `cumm`
 *   `cummer`
 *   `cumming`
+*   `cummings`
 *   `cumquat`
 *   `cumqueen`
 *   `cumshot`

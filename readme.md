@@ -86,4 +86,4 @@ After a word or phrase is added there, it can automatically be added here.
 
 [author]: http://wooorm.com
 
-[cuss]: https://github.com/wooorm/cuss
+[cuss]: https://github.com/words/cuss

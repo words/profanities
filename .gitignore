@@ -3,5 +3,9 @@
 node_modules/
 profanities.js
 profanities.min.js
-index.json
 yarn.lock
+index.json
+ar-latn.json
+es.json
+fr.json
+pt-br.json

@@ -1,4 +1,8 @@
-# profanities [![Build Status][travis-badge]][travis]
+# profanities
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 List of lots of profane words.
 
@@ -76,9 +80,17 @@ After a word or phrase is added there, it can automatically be added here.
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/words/profanities.svg
+[build-badge]: https://img.shields.io/travis/words/profanities.svg
 
-[travis]: https://travis-ci.org/words/profanities
+[build]: https://travis-ci.org/words/profanities
+
+[downloads-badge]: https://img.shields.io/npm/dm/profanities.svg
+
+[downloads]: https://www.npmjs.com/package/profanities
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/profanities.svg
+
+[size]: https://bundlephobia.com/result?p=profanities
 
 [npm]: https://docs.npmjs.com/cli/install
 

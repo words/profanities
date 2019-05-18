@@ -67,7 +67,7 @@ See [cuss][] for the supported terms.
 
 Thanks, contributions are greatly appreciated!  :+1:
 
-To add words, please add it to [cuss][].
+To add words, please add them to [cuss][].
 After a word or phrase is added there, it can automatically be added here.
 
 ## License

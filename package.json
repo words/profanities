@@ -16,7 +16,8 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Michael Jalkio <mjalkio@gmail.com>",
-    "Ron Michael Zettlemoyer <ron@zettlemoyer.com>"
+    "Ron Michael Zettlemoyer <ron@zettlemoyer.com>",
+    "Richard Littauer <richard.littauer@gmail.com>"
   ],
   "main": "index.json",
   "files": [

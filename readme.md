@@ -6,7 +6,7 @@
 
 List of lots of profane words.
 
-> See [**cuss**][cuss] for the same words, rated for sureness: how
+> See [`cuss`][cuss] for the same words, rated for sureness: how
 > likely they are to be used as either profanity or clean text.
 
 ## Installation
@@ -39,16 +39,16 @@ console.log(profanities.includes('boule')) // true
 
 ### `profanities`
 
-**Type**: `Array.<string>` — **profanities** exposes a list of strings.
+`profanities` exposes a list of strings (`Array.<string>`).
 
 ## Support
 
-**profanities** supports many profane words and phrases in different languages.
+`profanities` supports many profane words and phrases in different languages.
 
-Note that the words listed in **profanities** might **not** be profane
-in certain contexts.
+Note that the words listed in `profanities` might *not* be profane in certain
+contexts.
 
-See [cuss][] for the supported terms.
+See [`cuss`][cuss] for the supported terms.
 
 ## Related
 
@@ -70,9 +70,8 @@ See [cuss][] for the supported terms.
 ## Contributing
 
 Thanks, contributions are greatly appreciated!  :+1:
-
-To add words, please add them to [cuss][].
-After a word or phrase is added there, it can automatically be added here.
+Words and new languages can be added to [`cuss`][cuss].
+After they are added there, this project can be built to include the changes.
 
 ## License
 

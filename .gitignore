@@ -7,5 +7,6 @@ yarn.lock
 index.json
 ar-latn.json
 es.json
+it.json
 fr.json
 pt-br.json

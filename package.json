@@ -23,6 +23,7 @@
   "files": [
     "ar-latn.json",
     "es.json",
+    "it.json",
     "fr.json",
     "index.json",
     "pt-br.json"

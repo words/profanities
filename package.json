@@ -33,11 +33,11 @@
     "browserify": "^16.0.0",
     "cuss": "^1.13.0",
     "prettier": "^1.14.3",
-    "remark-cli": "^6.0.0",
-    "remark-preset-wooorm": "^5.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-wooorm": "^6.0.0",
     "tape": "^4.0.0",
     "tinyify": "^2.4.3",
-    "xo": "^0.24.0"
+    "xo": "^0.25.0"
   },
   "scripts": {
     "generate": "node build",

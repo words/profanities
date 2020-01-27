@@ -9,15 +9,15 @@ List of lots of profane words.
 > See [`cuss`][cuss] for the same words, rated for sureness: how
 > likely they are to be used as either profanity or clean text.
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install profanities
 ```
 
-## Usage
+## Use
 
 ```js
 var profanities = require('profanities')

@@ -25,7 +25,7 @@ var profanities = require('profanities')
 console.log(profanities.includes('butt')) // true
 ```
 
-### Usage of locale versions
+### Use of locale versions
 
 For example, to use French:
 

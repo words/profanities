@@ -3,7 +3,7 @@
 var test = require('tape')
 var profanities = require('.')
 
-var langs = ['ar-latn', 'es', 'fr', 'pt-br']
+var langs = ['ar-latn', 'es', 'fr', 'pt-br', 'pt-pt']
 
 test('profanities', function (t) {
   t.equal(typeof profanities, 'object', 'should be an array #1')

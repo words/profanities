@@ -30,7 +30,8 @@
     "it.json",
     "fr.json",
     "index.json",
-    "pt-br.json"
+    "pt-br.json",
+    "pt-pt.json"
   ],
   "dependencies": {},
   "devDependencies": {

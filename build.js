@@ -6,7 +6,7 @@ var pkg = require('cuss/package')
 
 var root = require.resolve('cuss')
 
-pkg.files.forEach(basename => {
+pkg.files.forEach((basename) => {
   var fp = path.join(root, '..', basename)
   var doc = fs.readFileSync(fp)
   var map = JSON.parse(doc)

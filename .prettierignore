@@ -1,2 +1,4 @@
 profanities.js
 profanities.min.js
+*.json
+*.md

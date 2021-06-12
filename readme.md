@@ -79,9 +79,9 @@ After they are added there, this project can be built to include the changes.
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/profanities.svg
+[build-badge]: https://github.com/words/profanities/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/profanities
+[build]: https://github.com/words/profanities/actions
 
 [downloads-badge]: https://img.shields.io/npm/dm/profanities.svg
 

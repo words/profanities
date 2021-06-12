@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
+/** @type {{exports: Record<string, string>}} */
 const pkg = JSON.parse(
   String(fs.readFileSync(path.join('node_modules', 'cuss', 'package.json')))
 )
@@ -13,6 +14,7 @@ async function main() {
 
   while (++index < files.length) {
     const basename = files[index]
+    /** @type {{cuss: Record<string, number>}} */
     // eslint-disable-next-line no-await-in-loop
     const mod = await import('./' + path.join('node_modules', 'cuss', basename))
     const profanities = Object.keys(mod.cuss)

@@ -26,14 +26,22 @@
   "sideEffects": false,
   "type": "module",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "ar-latn.js",
+    "ar-latn.d.ts",
     "es.js",
+    "es.d.ts",
     "fr.js",
+    "fr.d.ts",
     "it.js",
+    "it.d.ts",
     "index.js",
+    "index.d.ts",
     "pt.js",
-    "pt-pt.js"
+    "pt.d.ts",
+    "pt-pt.js",
+    "pt-pt.d.ts"
   ],
   "exports": {
     ".": "./index.js",
@@ -51,20 +59,26 @@
     "./pt-pt.js": "./pt-pt.js"
   },
   "devDependencies": {
+    "@types/tape": "^4.0.0",
     "c8": "^7.0.0",
     "cuss": "^2.0.0",
     "prettier": "^2.0.0",
     "remark-cli": "^9.0.0",
     "remark-preset-wooorm": "^8.0.0",
+    "rimraf": "^3.0.0",
     "tape": "^5.0.0",
+    "type-coverage": "^2.0.0",
+    "typescript": "^4.0.0",
     "xo": "^0.39.0"
   },
   "scripts": {
+    "prepack": "npm run build && npm run format",
+    "build": "rimraf \"*.d.ts\" && tsc && type-coverage",
     "generate": "node build",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test.js",
     "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov node test.js",
-    "test": "npm run generate && npm run format && npm run test-api"
+    "test": "npm run generate && npm ruin build && npm run format && npm run test-api"
   },
   "prettier": {
     "tabWidth": 2,
@@ -81,5 +95,10 @@
     "plugins": [
       "preset-wooorm"
     ]
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "strict": true
   }
 }

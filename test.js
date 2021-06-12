@@ -1,25 +1,9 @@
-'use strict'
+import test from 'tape'
+import {profanities} from './index.js'
 
-var test = require('tape')
-var profanities = require('.')
-
-var langs = ['ar-latn', 'es', 'fr', 'pt-br', 'pt-pt']
-
-test('profanities', function (t) {
+test('profanities', (t) => {
   t.equal(typeof profanities, 'object', 'should be an array #1')
   t.equal(Array.isArray(profanities), true, 'should be an array #2')
   t.notEqual(profanities.indexOf('barf'), -1, 'should contain words')
-
-  let index = -1
-  while (++index < langs.length) {
-    one(langs[index])
-  }
-
-  function one(lang) {
-    t.doesNotThrow(function () {
-      require('./' + lang)
-    }, 'Should support ' + lang)
-  }
-
   t.end()
 })

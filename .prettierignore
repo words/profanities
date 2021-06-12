@@ -1,4 +1,2 @@
-profanities.js
-profanities.min.js
-*.json
+coverage/
 *.md

@@ -1,6 +1,7 @@
 # profanities
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -11,6 +12,9 @@ List of lots of profane words.
 
 ## Install
 
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -20,7 +24,7 @@ npm install profanities
 ## Use
 
 ```js
-var profanities = require('profanities')
+import {profanities} from 'profanities'
 
 console.log(profanities.includes('butt')) // true
 ```
@@ -30,12 +34,21 @@ console.log(profanities.includes('butt')) // true
 For example, to use French:
 
 ```js
-var profanities = require('profanities/fr')
+import {profanities} from 'profanities/fr'
 
 console.log(profanities.includes('boule')) // true
 ```
 
 ## API
+
+`profanities` has the following entries in its export map:
+`profanities` (English), `profanities/ar-latn` (Arabic (Latin script)),
+`profanities/es` (Spanish), `profanities/fr` (French),
+`profanities/it` (Italian), `profanities/pt-br` (Portuguese (Brazillian)),
+`profanities/pt-pt` (Portuguese (Portugal)).
+
+Each entry exports the identifier `profanities`.
+There are no default exports.
 
 ### `profanities`
 
@@ -82,6 +95,10 @@ After they are added there, this project can be built to include the changes.
 [build-badge]: https://github.com/words/profanities/workflows/main/badge.svg
 
 [build]: https://github.com/words/profanities/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/words/profanities.svg
+
+[coverage]: https://codecov.io/github/words/profanities
 
 [downloads-badge]: https://img.shields.io/npm/dm/profanities.svg
 

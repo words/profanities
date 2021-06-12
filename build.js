@@ -1,22 +1,29 @@
-'use strict'
+import fs from 'fs'
+import path from 'path'
 
-var fs = require('fs')
-var path = require('path')
-var pkg = require('cuss/package')
+const pkg = JSON.parse(
+  String(fs.readFileSync(path.join('node_modules', 'cuss', 'package.json')))
+)
 
-var root = require.resolve('cuss')
+main()
 
-const files = pkg.files
-let index = -1
+async function main() {
+  const files = [...new Set(Object.values(pkg.exports))]
+  let index = -1
 
-while (++index < files.length) {
-  const basename = files[index]
-  var fp = path.join(root, '..', basename)
-  var doc = fs.readFileSync(fp)
-  var map = JSON.parse(doc)
-  var profanities = Object.keys(map)
+  while (++index < files.length) {
+    const basename = files[index]
+    // eslint-disable-next-line no-await-in-loop
+    const mod = await import('./' + path.join('node_modules', 'cuss', basename))
+    const profanities = Object.keys(mod.cuss)
 
-  fs.writeFileSync(basename, JSON.stringify(profanities, null, 2) + '\n')
+    fs.writeFileSync(
+      basename,
+      'export const profanities = ' +
+        JSON.stringify(profanities, null, 2) +
+        '\n'
+    )
 
-  console.log('✓ ' + basename + ' (' + profanities.length + ')')
+    console.log('✓ ' + basename + ' (' + profanities.length + ')')
+  }
 }

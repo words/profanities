@@ -59,6 +59,7 @@
     "./pt-pt.js": "./pt-pt.js"
   },
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "@types/tape": "^4.0.0",
     "c8": "^7.0.0",
     "cuss": "^2.0.0",

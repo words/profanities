@@ -52,7 +52,7 @@ There are no default exports.
 
 ### `profanities`
 
-`profanities` exposes a list of strings (`Array.<string>`).
+`profanities` exposes a list of strings (`Array<string>`).
 
 ## Support
 

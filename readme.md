@@ -111,19 +111,19 @@ It also works in Deno and modern browsers.
 
 ## Related
 
-*   [buzzwords](https://github.com/words/buzzwords)
+*   [`buzzwords`](https://github.com/words/buzzwords)
     — list of buzzwords
-*   [cuss][]
+*   [`cuss`][cuss]
     — map of profane words to a rating of sureness
-*   [dale-chall](https://github.com/words/dale-chall)
+*   [`dale-chall`](https://github.com/words/dale-chall)
     — list of familiar English words (1995)
-*   [fillers](https://github.com/words/fillers)
+*   [`fillers`](https://github.com/words/fillers)
     — list of filler words
-*   [hedges](https://github.com/words/hedges)
+*   [`hedges`](https://github.com/words/hedges)
     — list of hedge words
-*   [spache](https://github.com/words/spache)
+*   [`spache`](https://github.com/words/spache)
     — list of easy English words (1974)
-*   [weasels](https://github.com/words/weasels)
+*   [`weasels`](https://github.com/words/weasels)
     — list of weasel words
 
 ## Contributing

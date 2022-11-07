@@ -34,9 +34,9 @@ while (++index < files.length) {
 
   await fs.writeFile(
     basename,
-    '/**\n * List of lots of profane words: ' +
+    '/**\n * List of ' +
       language +
-      '.\n */\nexport const profanities = ' +
+      ' profane words.\n */\nexport const profanities = ' +
       JSON.stringify(profanities, null, 2) +
       '\n'
   )

@@ -1,31 +1,34 @@
-import fs from 'node:fs'
-import path from 'node:path'
+/**
+ * @typedef {import('type-fest').PackageJson} PackageJson
+ */
 
-/** @type {{exports: Record<string, string>}} */
-const pkg = JSON.parse(
-  String(fs.readFileSync(path.join('node_modules', 'cuss', 'package.json')))
-)
+import assert from 'node:assert/strict'
+import fs from 'node:fs/promises'
 
-main()
+const cussUrl = new URL('node_modules/cuss/', import.meta.url)
+const pkgUrl = new URL('package.json', cussUrl)
+/** @type {PackageJson} */
+const pkg = JSON.parse(String(await fs.readFile(pkgUrl)))
 
-async function main() {
-  const files = [...new Set(Object.values(pkg.exports))]
-  let index = -1
+assert(pkg.exports, 'expected `exports` in `cuss`')
 
-  while (++index < files.length) {
-    const basename = files[index]
-    /** @type {{cuss: Record<string, number>}} */
-    // eslint-disable-next-line no-await-in-loop
-    const mod = await import('./' + path.join('node_modules', 'cuss', basename))
-    const profanities = Object.keys(mod.cuss)
+const files = [...new Set(Object.values(pkg.exports))]
+let index = -1
 
-    fs.writeFileSync(
-      basename,
-      'export const profanities = ' +
-        JSON.stringify(profanities, null, 2) +
-        '\n'
-    )
+/* eslint-disable no-await-in-loop */
+while (++index < files.length) {
+  const basename = files[index]
+  assert(typeof basename === 'string', 'expected string exports in `cuss`')
+  const modUrl = new URL(basename, cussUrl)
+  /** @type {{cuss: Record<string, number>}} */
+  const mod = await import(modUrl.href)
+  const profanities = Object.keys(mod.cuss)
 
-    console.log('✓ ' + basename + ' (' + profanities.length + ')')
-  }
+  await fs.writeFile(
+    basename,
+    'export const profanities = ' + JSON.stringify(profanities, null, 2) + '\n'
+  )
+
+  console.log('✓ ' + basename + ' (' + profanities.length + ')')
 }
+/* eslint-enable no-await-in-loop */

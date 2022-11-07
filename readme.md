@@ -68,7 +68,7 @@ console.log(profanitiesFr.includes('boule')) // true
 
 ## API
 
-`profanities` has exports the following entries:
+`profanities` exports the following entries:
 
 *   `profanities`
     — English
